@@ -1,0 +1,77 @@
+PCPL (Python Compilable Programming Language)
+
+PCPL style
+	
+	Strings:
+		start: "
+		end: "
+		type: 0
+	Indexing:
+		start: <
+		end: >
+		type: 1
+	Execute:
+		start: {
+		end: }
+		type: 2
+	Attributes:
+		start: [
+		end: ]
+		type: 3
+	Statements:
+		start: (
+		end: )
+		type: 4
+		
+	Operations:
+		Operators (JUFS-BASE-PACK):
+			equal:
+				type: E
+			higher:
+				type: H
+			lower:
+				type: L
+			add:
+				type: A
+			subtract:
+				type: S
+			multiply:
+				type: M
+			divide:
+				type: D
+			remainder:
+				type: R
+		start: :
+		end: ;
+		BASE-type: 5
+		Example-type: 5-H This would mean an operation with the operator "higher" which checks if argument 1 is higher than argument 2
+
+Example instruction:
+
+<indexobject{function,5}>
+
+This would return the indexed thing from "indexobject" with the index from the result of the function named "function" that is given the argument "5"
+
+Example instruction class:
+
+class main():
+	def IND(self, index):
+		print("Indexing is not supported with this instruction")
+		return (1)
+	def EXEC(self, params):
+		print("Execution is not supported with this instruction")
+		return (1)
+	def ATR(self, target):
+		print("Getting an attribute is not supported with this instruction")
+		return (1)
+	def STAT(self, params):
+		print("Statements are not supported with this instruction")
+		return (1)
+	def OP(self, arg1, arg2):
+		print("Operations are not supported with this instruction")
+		return (1)
+
+!WARNING! in strings (between ") instead of , use . the dots will be replaced by , automatically
+
+
+

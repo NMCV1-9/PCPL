@@ -1,0 +1,8 @@
+(create,addcode)
+(create,subcode)
+(addcode,"{log:add{input.number 1 }{input.number 2 };}")
+(subcode,"{log:subtract{input.number 1 }{input.number 2 };}")
+(create,select)
+(select{input,"enter mode. add for addition and subtract for subtraction "})
+(if:equal[select,PH],add;,addcode)
+(if:equal[select,PH],subtract;,subcode)
