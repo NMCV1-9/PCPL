@@ -1,2 +1,2 @@
 # PCPL
-PCPL, the programming language.
+PCPL, Python Compilable Programming Language.
