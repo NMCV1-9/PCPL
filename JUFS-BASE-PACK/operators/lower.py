@@ -13,6 +13,9 @@ class main():
         return (1)
     def OP(self, arg1, arg2):
         if arg1.isnumeric() and arg2.isnumeric():
-            return (0, int(arg1)+int(arg2))
+            if arg1 < arg2:
+                return (0, True)
+            else:
+                return (0, False)
         else:
-            return (0, arg1+arg2)
+            return (1)
