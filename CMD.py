@@ -32,7 +32,7 @@ print("Types")
 STRtypes = ['"', "<", "{", "[", "(", ":"]
 ENDtypes = ['"', ">", "}", "]", ")", ";"]
 print("Types initialised")
-print(f"PCPL Command Line Version {version}, Made by Justus Wolff.")
+print(f"PCPL Command Line Version {version}, Made by ☐☐☐☐☐☐ ☐☐☐☐☐.")
 print(f"Type 'help' to get a list of commands.")
 commands = ["compile <path> <target>        compiles the file at the specified path and writes output to target", "load <path>         executes the file at the specified path", "Reload-M        Reloads core modules", "LIS <target instruction set name>        loads the specific instruction set under the file path", "exit           exits the PCPL Command Line", "help        Prints this message"]
 while True:
