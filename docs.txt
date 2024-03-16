@@ -44,13 +44,13 @@ PCPL style
 		start: :
 		end: ;
 		BASE-type: 5
-		Example-type: 5-H This would mean an operation with the operator "higher" which checks if argument 1 is higher than argument 2
+		Example-type: 5-H checks if argument 1 is higher than argument 2
 
 Example instruction:
 
 <indexobject{function,5}>
 
-This would return the indexed thing from "indexobject" with the index from the result of the function named "function" that is given the argument "5"
+This would return the indexed thing from "indexobject" with the index from the result of the function named "function" that is given the argument "5".
 
 Example instruction class:
 
